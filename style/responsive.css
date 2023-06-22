@@ -1,0 +1,420 @@
+@media (max-width: 1170px) {
+    .basket-button,
+    .info-button {
+        padding: 10px 25px;
+    }
+
+    .modal {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .menu-wrapper {
+        padding: 15px 0;
+    }
+
+    .nav-menu {
+        grid-template-columns: min-content 1fr 1fr;
+    }
+
+    .nav-buttons-panel {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .menu-logo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .menu-phone-panel {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .worktime-card .worktime-info p br {
+        display: unset;
+    }
+
+    .worktime-wrapper .worktime-card {
+        align-items: center;
+    }
+
+    .goods-wrapper .buttons-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
+    }
+
+    .goods-wrapper .buttons-container .info-button {
+        font-size: 14px;
+    }
+
+    .delivery-wrapper .delivery-info {
+        width: 40%;
+    }
+
+    .delivery-wrapper .delivery-image {
+        flex-basis: 50%;
+    }
+
+    .delivery-wrapper .delivery-image img {
+        object-position: right;
+    }
+
+    .modal {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu .menu-phone-wrapper {
+        column-gap: 10px;
+    }
+
+    .main-cover {
+        padding: 150px 0;
+    }
+
+    .main-cover-info p {
+        font-size: 45px;
+    }
+
+    .main-cover-info span {
+        font-size: 16px;
+    }
+
+    .worktime-wrapper {
+        margin: 0 auto;
+        width: max-content;
+        flex-direction: column;
+    }
+
+    .worktime-wrapper .worktime-card {
+        justify-content: flex-start;
+    }
+
+    .worktime-wrapper .worktime-image {
+        padding-right: 10px;
+        width: 85px;
+        height: 70px;
+    }
+
+    .worktime-separator {
+        width: 70%;
+        margin: 10px 0;
+        height: 2px;
+        align-self: center;
+    }
+
+    .goods {
+        padding: 100px 0;
+    }
+
+    .goods .goods-wrapper {
+        grid-template-columns: repeat(auto-fill, 45%);
+        justify-content: space-around;
+        row-gap: 30px;
+    }
+
+    .delivery {
+        padding: 50px 0 90px 0;
+    }
+
+    .delivery-wrapper {
+        margin: 0 auto;
+        width: 70%;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .delivery-wrapper .delivery-info {
+        width: 60%;
+    }
+
+    .contacts {
+        padding: 50px 0 60px 0;
+    }
+
+    .contacts-wrapper {
+        margin: 0 auto;
+        width: max-content;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    a:hover,
+    .nav-menu .menu-phone-wrapper a:hover {
+        color: unset;
+    }
+
+    .call-button:hover {
+        background-color: #f9813a;
+    }
+
+    .basket-button:hover,
+    .info-button:hover {
+        opacity: 1;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .basket-icon {
+        top: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .basket-icon .basket-counter {
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .menu-wrapper {
+        display: none;
+    }
+
+    .nav-menu {
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: inherit;
+        overflow: scroll;
+        z-index: 5;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .nav-menu .menu-logo h1 {
+        margin: 20px 0;
+    }
+
+    .nav-menu .menu-phone-wrapper {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .menu-mobile {
+        display: unset;
+    }
+
+    .main-cover {
+        background-size: 160%;
+        background-position: 50% 0;
+    }
+
+    .main-cover-info {
+        width: 65%;
+        padding-left: 70px;
+    }
+
+    .main-cover-info p {
+        padding-bottom: 10px;
+        font-size: 26px;
+    }
+
+    .main-cover-info span {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    .worktime-wrapper .worktime-card h3 {
+        font-size: 20px;
+    }
+
+    .worktime-wrapper .worktime-card p {
+        font-size: 14px;
+        line-height: unset;
+    }
+
+    .worktime-wrapper .worktime-image {
+        width: 55px;
+        height: 55px;
+    }
+
+    .worktime-wrapper .worktime-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .goods {
+        padding: 50px 0;
+    }
+
+    .goods .goods-wrapper {
+        grid-template-columns: 0.7fr;
+    }
+
+    .goods-wrapper .card-title,
+    .goods-wrapper .buttons-container .info-button {
+        font-size: 18px;
+    }
+
+    .goods-wrapper .card-price {
+        font-size: 16px;
+    }
+
+    .goods-wrapper .buttons-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    .basket-button,
+    .info-button {
+        padding: 10px 20px;
+    }
+
+    .delivery {
+        padding: 50px 0 70px 0;
+    }
+
+    .delivery-wrapper .delivery-info {
+        width: 70%;
+    }
+
+    .delivery-wrapper .delivery-info h3 {
+        font-size: 28px;
+    }
+
+    .delivery-wrapper .delivery-info span {
+        font-size: 18px;
+    }
+
+    .contacts {
+        padding: 50px 0 40px 0;
+    }
+
+    .contacts-wrapper {
+        row-gap: 30px;
+    }
+
+    .contacts-wrapper .contacts-card h3 {
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .contacts-wrapper .contacts-card a {
+        padding: 0;
+    }
+
+    .yandex-map {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .modal .modal-wrapper {
+        padding: 30px 10px 50px 10px;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        overflow: scroll;
+        z-index: 5;
+    }
+
+    .list-of-goods .card-wrapper {
+        grid-template-columns: min-content 1fr;
+    }
+
+    .list-of-goods .card-wrapper .card-price {
+        justify-self: flex-end;
+    }
+
+    .card-quantity .card-remove::before {
+        display: unset;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .card-quantity .card-remove {
+        width: 35px;
+        height: 35px;
+        margin-left: auto;
+        padding: 0;
+        font-size: 0;
+        background-color: #efefef;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-mobile {
+        top: 10px;
+        left: 10px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .basket-icon {
+        top: 10px;
+        right: 10px;
+    }
+
+    .main-cover .container {
+        padding: 0;
+    }
+
+    .main-cover-info {
+        padding-left: 40px;
+    }
+
+    .worktime-wrapper {
+        width: 100%;
+    }
+
+    .goods .goods-wrapper {
+        grid-template-columns: 0.9fr;
+    }
+
+    .goods-wrapper .card-price {
+        padding: 20px 0;
+    }
+
+    .goods-wrapper .buttons-container {
+        padding-bottom: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
+    }
+
+    .goods-wrapper .buttons-container .info-button {
+        font-size: 14px;
+    }
+
+    .delivery-wrapper {
+        width: 80%;
+    }
+
+    .contacts-wrapper {
+        width: 90%;
+    }
+}
